@@ -83,12 +83,12 @@ gcp_submit_training:
 		--region ${REGION} \
 		--stream-logs
 
-clean:
-	@rm -f */version.txt
-	@rm -f .coverage
-	@rm -fr */__pycache__ __pycache__
-	@rm -fr build dist *.dist-info *.egg-info
-	@rm -fr */*.pyc
+# clean:
+# 	@rm -f */version.txt
+# 	@rm -f .coverage
+# 	@rm -fr */__pycache__ __pycache__
+# 	@rm -fr build dist *.dist-info *.egg-info
+# 	@rm -fr */*.pyc
 
 
 ##### Prediction API - - - - - - - - - - - - - - - - - - - - - - - - -
