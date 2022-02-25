@@ -62,22 +62,22 @@ jobs:
   # # - keep in mind you also need to configure Heroku HEROKU_API_KEY and HEROKU_EMAIL in GitHub secrets
   # # - and replace REPLACE_WITH_YOUR_HEROKU_APP_NAME in this file with the name of your Heroku app
 
-  deploy_heroku:
+  # deploy_heroku:
   # HEROKU_OAUTH_SECRET=2cbfa0fe-c133-40da-bbb1-95278fbff500
   # HEROKU_OAUTH_ID=e425f99e-7c3f-4fd5-8d43-a92a5ebc5c03
   # HEROKU_API_KEY = 2cbfa0fe-c133-40da-bbb1-95278fbff500
   # HEROKU_EMAIL = lam.trinh@global.t-bird.edu
 
-    needs: build
-    runs-on: ubuntu-latest
+    # needs: build
+    # runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v2
-    - uses: akhileshns/heroku-deploy@v3.0.4 # This is the action
-      with:
-        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-        heroku_app_name: "taxi-fare-website-trial" # Must be unique in Heroku
-        heroku_email: ${{secrets.HEROKU_EMAIL}}
+    # steps:
+    # - uses: actions/checkout@v2
+    # - uses: akhileshns/heroku-deploy@v3.0.4 # This is the action
+    #   with:
+    #     heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+    #     heroku_app_name: "taxi-fare-website-trial" # Must be unique in Heroku
+    #     heroku_email: ${{secrets.HEROKU_EMAIL}}
 
 # CD code with gcloud, doesn't work yet
 # Need 4 things: GCP project ID, app_name, email, and credentials in Github secrets
